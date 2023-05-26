@@ -1,5 +1,6 @@
-cmake_minimun_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.10)
 
 project(sqlite)
 
-message(FATAL_ERROR "TODO")
+add_library(sqlite src/sqlite3.c)
+target_include_directories(sqlite PUBLIC src)
